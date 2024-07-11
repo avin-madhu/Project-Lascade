@@ -75,8 +75,8 @@ const ButtonsView = ({ onCollapse }) => {
   };
 
   const cancelButtonStyle = {
-    width: '60px',
-    height: '60px',
+    width: '50px',
+    height: '50px',
     borderRadius: '50%',
     backgroundColor: '#2B2C2FB2',
     border: 'none',
