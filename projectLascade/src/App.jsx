@@ -1,11 +1,11 @@
-function App() {
-  const [count, setCount] = useState(0)
+import React from "react"
+import InputContainer from "./components/InputContainer"
 
+function App() {
   return (
     <>
-      
+      <InputContainer/>
     </>
   )
 }
-
 export default App
