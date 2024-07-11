@@ -11,7 +11,7 @@ const InputContainer = () => {
     bottom: 0,
     left: 0,
     right: 0,
-    height: '300px', // Adjust as needed
+    height: '240px', // Adjust as needed
     overflow: 'hidden',
   };
 

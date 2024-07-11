@@ -3,9 +3,10 @@ import React from 'react';
 const InputView = ({ onExpand }) => {
   const viewStyle = {
     display: 'flex',
-    flexDirection: 'coloumn',
+    flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: '#131418F5',
+    background: 'linear-gradient(to top, #000000F5, #131418F5)',
     padding: '10px 15px',
     width: '50%',
     height: '100%',
@@ -21,25 +22,30 @@ const InputView = ({ onExpand }) => {
     width: '100%',
     height: '70px',
     cursor: 'pointer',
-    margin: '20px'
-
+    margin: '20px',
+    marginTop: '100px'
   };
 
   const textStyle = {
     fontWeight: 'bold',
-    marginRight: '50px',
-    marginLeft: '35px'
+    marginRight: '10px',
+    marginLeft: '35px',
+    fontSize: '21px',
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis'
   };
 
   const spaceStyle = {
     flex: 1,
     backgroundColor: 'transparent',
-    padding: '30px',
     cursor: 'pointer',
+    padding: '10px',
+    width: '10px'
   };
 
   const arrowStyle = {
-    marginRight: '25px',
+    marginRight: '20px',
     color: 'grey',
     fontSize: '20px'
   };
@@ -50,19 +56,13 @@ const InputView = ({ onExpand }) => {
     height: '20%',
     width: '100%',
     flexDirection: 'column',
-  }
+  };
 
   return (
     <div style={viewStyle}>
-      {/* <div style={routeDetailStyle}>
-         
-      </div> */}
       <div style={inputContainerStyle} onClick={onExpand}>
         <span style={textStyle}>Create video</span>
-        <div
-          style={spaceStyle}
-          readOnly
-        />
+        <div style={spaceStyle} />
         <i className="fa-solid fa-arrow-right" style={arrowStyle}></i>
       </div>
     </div>

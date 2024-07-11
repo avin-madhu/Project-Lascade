@@ -9,6 +9,7 @@ const ButtonsView = ({ onCollapse }) => {
     height: '100%',
     padding: '10px',
     backgroundColor: '#131418F5',
+    background: 'linear-gradient(to top, #000000F5, #131418F5)',
     boxSizing: 'border-box',
   };
 
