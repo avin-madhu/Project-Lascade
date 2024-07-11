@@ -126,12 +126,12 @@ const InputView = ({ onExpand }) => {
   return (
     <div style={viewStyle}>
       <div style={routeDetailContainerStyle}>
-        <button style={settingButtonStyle} onClick={onExpand}><i style={buttonIconStyle} class="fa-solid fa-ellipsis-vertical"></i></button>
+        <button style={settingButtonStyle} onClick={onExpand}><i style={buttonIconStyle} className="fa-solid fa-ellipsis-vertical"></i></button>
         <div style={textContainerStyle}>
           <span style={routeTextStyle}>Kochi - Los Angels</span>
           <span style={pointsTextStyle}>2 points</span>
         </div>
-        <button style={buttonStyle}><i style={buttonIconStyle} class="fa-solid fa-plus"></i></button>
+        <button style={buttonStyle}><i style={buttonIconStyle} className="fa-solid fa-plus"></i></button>
       </div>
       <div style={inputContainerStyle}>
         <span style={textStyle}>Create video</span>

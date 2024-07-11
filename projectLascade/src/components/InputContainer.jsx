@@ -13,6 +13,8 @@ const InputContainer = () => {
     right: 0,
     height: '240px', // Adjust as needed
     overflow: 'hidden',
+    marginTop: '0px',
+    zIndex: 1
   };
 
   const sliderStyle = {

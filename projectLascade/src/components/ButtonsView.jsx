@@ -96,7 +96,7 @@ const ButtonsView = ({ onCollapse }) => {
   return (
     <div style={viewStyle}>
       <div style={headerStyle}>
-        <button style={cancelButtonStyle} onClick={onCollapse}><i style={buttonIconStyle} class="fa-solid fa-xmark"></i></button>
+        <button style={cancelButtonStyle} onClick={onCollapse}><i style={buttonIconStyle} className="fa-solid fa-xmark"></i></button>
         <span style={titleStyle}>Route setting</span>
         <button style={backButtonStyle}>
           <i></i>

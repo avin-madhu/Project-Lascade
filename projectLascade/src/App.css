@@ -1,7 +1,5 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
   text-align: center;
 }
 #buttonview-actionButton{
@@ -10,3 +8,15 @@
   font-weight: 800;
 }
 
+.map-iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+}
+
+.input-container {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.8); /* Optional: Add a background to make the inputContainer readable */
+  padding: 20px;
+}
