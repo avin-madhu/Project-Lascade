@@ -3,11 +3,14 @@ body{
   font-optical-sizing: auto;
   font-weight: 800;
   background-color: rgb(255, 255, 255);
+  margin: 0px
 }
 #buttonview-actionbutton{
 
   font-family: "Readex Pro", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 800;
+  font-weight: 100;
 
 }
+
+

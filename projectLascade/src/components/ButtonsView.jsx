@@ -1,4 +1,4 @@
-// ButtonsView.jsx
+// Route Settings Page
 import React from 'react';
 
 const ButtonsView = ({ onCollapse }) => {
@@ -17,11 +17,16 @@ const ButtonsView = ({ onCollapse }) => {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: '10px',
+    marginBottom: '0px',
+    height: '100px',
+    backgroundColor: 'transparent'
   };
 
   const titleStyle = {
     fontWeight: 'bold',
+    alignItems: 'center',
+    marginLeft: '-35px',
+    color: 'white'
   };
 
   const backButtonStyle = {
@@ -35,7 +40,7 @@ const ButtonsView = ({ onCollapse }) => {
   const buttonContainerStyle = {
     display: 'flex',
     justifyContent: 'space-between',
-    marginTop: '70px',
+    marginTop: '10px',
     fontFamily: 'Readex Pro'
   };
 
@@ -69,13 +74,32 @@ const ButtonsView = ({ onCollapse }) => {
     fontSize: '17px'
   };
 
+  const cancelButtonStyle = {
+    width: '60px',
+    height: '60px',
+    borderRadius: '50%',
+    backgroundColor: '#2B2C2FB2',
+    border: 'none',
+    color: 'white',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    cursor: 'pointer',
+    marginLeft: '5px',
+    marginRight: '5px'
+  };
+
+  const buttonIconStyle = {
+    fontSize: '26px'
+  }
 
   return (
     <div style={viewStyle}>
       <div style={headerStyle}>
+        <button style={cancelButtonStyle} onClick={onCollapse}><i style={buttonIconStyle} class="fa-solid fa-xmark"></i></button>
         <span style={titleStyle}>Route setting</span>
-        <button style={backButtonStyle} onClick={onCollapse}>
-          <i className="fa-solid fa-chevron-left"></i>
+        <button style={backButtonStyle}>
+          <i></i>
         </button>
       </div>
       <div style={buttonContainerStyle}>

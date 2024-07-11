@@ -23,7 +23,7 @@ const InputView = ({ onExpand }) => {
     height: '70px',
     cursor: 'pointer',
     margin: '20px',
-    marginTop: '100px'
+    marginTop: '10px'
   };
 
   const textStyle = {
@@ -58,9 +58,83 @@ const InputView = ({ onExpand }) => {
     flexDirection: 'column',
   };
 
+  const routeDetailContainerStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    marginBottom: '0px', 
+    width: '100%', 
+    height: '100px',
+    justifyContent: 'space-between', 
+    backgroundColor: 'transparent'
+  };
+
+  const textContainerStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    flex: 1, 
+  };
+
+  const buttonStyle = {
+    width: '60px',
+    height: '60px',
+    borderRadius: '50%',
+    backgroundColor: '#2B2C2FB2',
+    border: 'none',
+    color: 'white',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    cursor: 'pointer',
+    marginLeft: '5px',
+    marginRight: '5px'
+  };
+
+  const settingButtonStyle = {
+    positon: '',
+    width: '60px',
+    height: '60px',
+    borderRadius: '50%',
+    backgroundColor: '#2B2C2FB2',
+    border: 'none',
+    color: 'white',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    cursor: 'pointer',
+    marginLeft: '5px',
+    marginRight: '5px'
+  };
+
+  const routeTextStyle = {
+      fontFamily: "Readex Pro",
+      fontSize: "17px",
+      color: 'white'
+  }
+
+  const pointsTextStyle = {
+    fontFamily: "Readex Pro",
+    fontSize: "12px",
+    marginTop: '2px',
+    color: '#a3a3a3'
+  }
+
+  const buttonIconStyle = {
+    fontSize: '23px'
+  }
+
+
   return (
     <div style={viewStyle}>
-      <div style={inputContainerStyle} onClick={onExpand}>
+      <div style={routeDetailContainerStyle}>
+        <button style={settingButtonStyle} onClick={onExpand}><i style={buttonIconStyle} class="fa-solid fa-ellipsis-vertical"></i></button>
+        <div style={textContainerStyle}>
+          <span style={routeTextStyle}>Kochi - Los Angels</span>
+          <span style={pointsTextStyle}>2 points</span>
+        </div>
+        <button style={buttonStyle}><i style={buttonIconStyle} class="fa-solid fa-plus"></i></button>
+      </div>
+      <div style={inputContainerStyle}>
         <span style={textStyle}>Create video</span>
         <div style={spaceStyle} />
         <i className="fa-solid fa-arrow-right" style={arrowStyle}></i>
